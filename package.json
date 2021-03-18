@@ -1,0 +1,40 @@
+{
+  "name": "postcss-scss",
+  "version": "0.0.1",
+  "description": "A basic drop-in implementation for scss nesting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yowainwright/postcss-scss.git"
+  },
+  "keywords": [
+    "postcss",
+    "scss"
+  ],
+  "author": "Jeffry Wainwright <yowainwright@gmail.com> (https://jeffry.in)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yowainwright/postcss-scss/issues"
+  },
+  "homepage": "https://github.com/yowainwright/postcss-scss#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.8",
+    "postcss-advanced-variables": "^3.0.1",
+    "postcss-cli": "^8.3.1",
+    "postcss-load-config": "^3.0.1",
+    "postcss-nested": "^5.0.5",
+    "postcss-scss": "^3.0.5"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ],
+  "scripts": {
+    "build": "postcss src/index.scss --syntax postcss-scss -u postcss-nested postcss-advanced-variables -o dist/index.css"
+  }
+}

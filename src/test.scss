@@ -1,0 +1,6 @@
+.test {
+  display: block;
+  &__nested {
+    padding: 1rem;
+  }
+}
